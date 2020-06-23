@@ -98,7 +98,9 @@ div.info-header {
     font-size: 1.1rem;
     font-weight: bolder;
 }
-
+.fa-award {
+    padding-left: 20px;
+}
 div.info {
     display: flex;
     flex-direction: row;
