@@ -124,7 +124,6 @@ div.socials {
     font-size: .8rem;
     color: #fff;
 }
-
 .fab {
     padding: 15px 5px;
     font-size: 1.2rem;
@@ -132,9 +131,221 @@ div.socials {
 a i.fab {
     color: #fff;
 }
+div.leader-display,
+div.footer-desktop {
+    display: none;
+}
 div.footer {
     width: 100%;
     height: auto;
     border: .5px solid #8d8b8b;
     background-color: #8d8b8b;
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        background-image: url(Assests/homepage-bg.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    main {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "a b";
+    }
+    div.inner-main {
+        grid-area: a;
+    }
+    div.leader-display {
+        display: block;
+        grid-area: b;
+        height: auto;
+    }
+
+    div.leader-inner {
+        width: 100%;
+        height: auto;
+        margin: 40px auto;
+    }
+    div.best-winner {
+        width: 280px;
+        height: auto;
+        border: 1px rgb(197, 162, 240);
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(157, 157, 157, 0.5), -5px -5px 10px rgba(87, 80, 93, 0.5);
+        margin: 20px auto;
+        background-color: rgb(197, 162, 240);
+    }
+    .best {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 20px 0;
+        color: #fff;
+    }
+    div i.fa-crown {
+        font-size: 2rem;
+        margin-left: 115px;
+        color: rgb(255, 255, 255);
+    }
+    div.winner-image {
+        width: 150px;
+        height: 150px;
+        background-image: url(Assests/blackman6.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+    p.name {
+        text-align: center;
+        padding: 5px 0;
+        font-size: .9rem;
+    }
+    .fas {
+        padding: 5px;
+    }
+    div.footer,
+    div.socials {
+        display: none;
+    }
+    div.socials-side {
+        margin: 10px auto;
+        text-align: center;
+        font-size: .8rem;
+        color: #000;
+    }
+    .fab {
+        padding: 15px 5px;
+        font-size: 1.2rem;
+    }
+    a i.fab {
+        color: #000;
+    }
+    div.second-best {
+        width: 280px;
+        height: auto;
+        border: 1px rgb(197, 162, 240);
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(157, 157, 157, 0.5), -5px -5px 10px rgba(87, 80, 93, 0.5);
+        margin: 20px auto;
+        background-color: rgb(240, 162, 240);
+    }
+    p.best2 {
+        font-size: 1rem;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+    }
+    div.second-winner-image {
+        width: 70px;
+        height: 70px;
+        background-image: url(Assests/woman.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px 50px 50px 0;
+        margin: 10px;
+    }
+    div.move {
+        display: flex;
+        flex-direction: row;
+    }
+    div.names {
+        text-align: start;
+        padding: 10px 0;
+        font-size: .8rem;
+    }
+    .name2 {
+        padding: 2px 0;
+    }
+    
+    .edit2 {
+        padding: 5px 0 2px;
+        font-size: 1rem;
+    }
+    a i.fab {
+        color: #fff;
+    }
+
+    div.third-best {
+        width: 280px;
+        height: auto;
+        border: 1px rgb(197, 162, 240);
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(157, 157, 157, 0.5), -5px -5px 10px rgba(87, 80, 93, 0.5);
+        margin: 20px auto;
+        background-color: rgb(162, 240, 233);
+    }
+    p.best2 {
+        font-size: 1rem;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+    }
+    div.third-winner-image {
+        width: 70px;
+        height: 70px;
+        background-image: url(Assests/blackman6.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px 50px 50px 0;
+        margin: 10px;
+    }
+    div.move {
+        display: flex;
+        flex-direction: row;
+    }
+    div.names {
+        text-align: start;
+        padding: 10px 0;
+        font-size: .8rem;
+    }
+    .name2 {
+        padding: 2px 0;
+    }
+    
+    .edit2 {
+        padding: 5px 0 2px;
+        font-size: 1rem;
+    }
+    a i.fab {
+        color: #fff;
+    }
+    div.footer {
+        width: 100%;
+        height: auto;
+        border: .5px solid #8d8b8b;
+        background-color: #8d8b8b;
+    }
+    div.footer-desktop {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid #8d8b8b;
+        background-color: #8d8b8b;
+    }
+
+    div.socials-footer {
+        margin: 40px auto;
+        text-align: center;
+        font-size: .8rem;
+        color: #fff;
+    }
+    .foot {
+        padding: 15px 5px;
+        font-size: 1.2rem;
+    }
+    a i.fab {
+        color: #fff;
+    }
+
 }
